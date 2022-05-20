@@ -1,0 +1,35 @@
+.explore-section{
+   position: relative;
+ }
+  
+  .explore-heading {
+    color: var(--primary-color);
+    text-transform:capitalize;
+    width: 73%;
+    font-family:'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    margin-bottom: 68px;
+ 
+  }
+  .explore-section-main{
+   position: absolute; 
+   top: 5rem;
+   left: 1rem;
+ }
+  .explore-btn {
+    background-color: var(--dark-green);
+    color: var(--primary-color);
+    width:25%;
+    margin-bottom: 50px;
+    font-variant: small-caps;
+    font-size:large;
+  }
+  .explore-btn:hover{
+      color:var(--dark-red);
+      background-color:greenyellow;
+      border: 2px solid var(--primary-color);
+  }
+  .text-white{
+   text-decoration: none;
+ }
+ 

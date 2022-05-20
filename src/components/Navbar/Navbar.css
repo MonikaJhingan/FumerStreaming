@@ -1,0 +1,44 @@
+.navbar{
+   height: 4rem ;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   left: 0;
+   background-color: var(--light-green);
+   box-shadow: 0 8px 10px var(--dark-red);
+   border-radius: 0;
+}
+.nav-logo{
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: 900;
+   font-size: 1.5rem;
+   font-stretch:ultra-condensed;
+   font-variant: small-caps;
+}
+
+.text-decorations{
+   color: var(--dark-red);
+   padding-right: 4rem; 
+   font-variant: small-caps;
+   font-weight: bolder;
+}
+.fas-icons{
+   color: var(--dark-red);
+   font-size: 5rem;
+}
+
+.search{
+border: 2px solid var(--gray);
+padding: 5px;
+border-radius: 0;
+width: 45rem;
+}
+.menu-items{
+   font-size: 1rem;
+}
+
+
+
+
+

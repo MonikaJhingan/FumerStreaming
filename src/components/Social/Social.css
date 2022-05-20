@@ -1,0 +1,25 @@
+.social{
+   margin-top: 5rem;
+   background-color: var(--black);
+}
+.social-heading{
+   color: var(--dark-red);
+   font-weight: bold;
+   text-transform: capitalize;
+   font-variant: small-caps;
+   font-family: 'Times New Roman', Times, serif;
+}
+.social-icons{
+   margin-top: 2rem;
+   height: 10rem;
+   display: flex;
+   justify-content: space-around;
+   list-style:none;
+}
+.social-icon{
+   margin:  1rem;
+   color: var(--secondary-color);
+}
+.icon-color{
+   color: var(--dark-green);
+}

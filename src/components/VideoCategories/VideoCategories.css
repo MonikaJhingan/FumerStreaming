@@ -1,0 +1,18 @@
+.video-categories {
+   margin-top: 4.5rem;
+   position: absolute;
+   display: flex;
+   width: 95%;
+   right: 0;
+    justify-content:center;
+    margin-left: 14rem;
+  }
+  .video-button {
+    background-color: var(--dark-red);
+    color: var(--primary-color);
+  }
+  .video-button:hover {
+    color: var(--secondary-color);
+    background-color: var(--dark-green);
+    border: 10px solid var(--secondary-color);
+  }

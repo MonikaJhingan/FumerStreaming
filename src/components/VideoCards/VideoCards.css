@@ -1,0 +1,10 @@
+.videos {
+   padding: 2rem 0;
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3rem;
+   position: absolute;
+   right: 0;
+   top: 8rem;
+ }

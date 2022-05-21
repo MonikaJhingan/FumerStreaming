@@ -2,8 +2,8 @@ import React, { useReducer } from "react";
 import "./Login.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
-import { useAuth } from "context/auth-context/auth-context";
-import { loginReducer } from "reducer/login-reducer";
+import { useAuth } from "../../context/auth-context/auth-context";
+import { loginReducer } from "../../reducer/login-reducer";
 import { BiShow, BiHide } from "react-icons/bi";
 
 export const Login = () => {
@@ -20,7 +20,6 @@ export const Login = () => {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post(`/api/auth/login`, {
         email,

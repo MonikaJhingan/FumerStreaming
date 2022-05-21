@@ -5,27 +5,27 @@
    top: 0;
    right: 0;
    left: 0;
-   background-color: var(--light-green);
+   background-color: var(--dark-blue);
    box-shadow: 0 8px 10px var(--dark-red);
    border-radius: 0;
 }
 .nav-logo{
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-weight: 900;
-   font-size: 1.5rem;
+   font-size: 2rem;
    font-stretch:ultra-condensed;
    font-variant: small-caps;
 }
 
 .text-decorations{
-   color: var(--dark-red);
-   padding-right: 4rem; 
+   color: var(--black);
+   padding-right: 3rem; 
    font-variant: small-caps;
    font-weight: bolder;
 }
 .fas-icons{
-   color: var(--dark-red);
-   font-size: 5rem;
+   color: var(--black);
+   font-size: 6rem;
 }
 
 .search{

@@ -4,7 +4,7 @@
    width: 15rem;
    height: 100vh;
    border-right: 2px solid var(--gray);
-   background-color: var(--light-green);
+   background-color: var(--dark-blue);
    
  }
  
@@ -20,7 +20,7 @@
    font-weight: 700;
    font-variant: small-caps;
    font-family: 'Times New Roman', Times, serif;
-   color: var(--dark-red);
+   color: var(--black);
  }
  .sidebar-link {
    text-decoration: none;

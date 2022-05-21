@@ -1,0 +1,12 @@
+.explore-container {
+   margin-top: 4rem;
+   display: flex;
+   position: relative;
+ }
+ .explore-main {
+   width: 70%;
+   position: absolute;
+   right: 0;
+   top: 1.3rem;
+ 
+ }

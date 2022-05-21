@@ -1,0 +1,44 @@
+.sidebar {
+   position: fixed;
+   top: 3rem;
+   width: 15rem;
+   height: 100vh;
+   border-right: 2px solid var(--gray);
+   background-color: var(--light-green);
+   
+ }
+ 
+ .sidebar-item {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   color: var(--dark-red);
+ }
+ .sidebar-text {
+  
+   margin-left: 1rem;
+   font-weight: 700;
+   font-variant: small-caps;
+   font-family: 'Times New Roman', Times, serif;
+   color: var(--dark-red);
+ }
+ .sidebar-link {
+   text-decoration: none;
+   color: var(--dark-red);
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+ }
+ .sidebar-icons {
+   margin-left: auto;
+   margin-right: 1rem;
+ }
+ .sidebar-text,
+ .sidebar-icons {
+   font-size: 1.3rem;
+ }
+ .sidebar-link:hover {
+   background-color: var(--secondary-color);
+   color: var(--primary-color);
+ }

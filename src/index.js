@@ -3,7 +3,6 @@ import * as ReactDOMClient from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
-import { createRoot } from 'react-dom/client';
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -18,6 +17,7 @@ import {
 } from "./context/index";
 // Call make Server
 makeServer();
+
 const root = ReactDOMClient.createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>

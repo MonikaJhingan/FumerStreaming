@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import "./VideoSinglePlaylist.css";
-import { useParams, Link } from "react-router-dom";
-import { useSinglePlayList, useAuth } from "context";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { useSinglePlayList, useAuth } from "../../context/index";
 import axios from "axios";
-import { removeFromPlaylist } from "services";
+import { removeFromPlaylist, clearSinglePlaylist } from "../../services/playlist";
+import { toast } from "react-toastify";
+
 
 export const VideoSinglePlaylist = () => {
   const { playlistId } = useParams();
+  const navigate = useNavigate();
   const { auth } = useAuth();
   const { singlePlayList, setSinglePlayList } = useSinglePlayList();
 
@@ -23,16 +26,6 @@ export const VideoSinglePlaylist = () => {
     })();
   }, [playlistId, auth.token, setSinglePlayList]);
 
-  // onst clearSinglePlaylist = () => {
-  //   (async () => {
-  //     const response = await axios.delete(`/api/user/playlists/${playlistId}`, {
-  //       headers: { authorization: auth.token },
-  //     });
-      
-  //     setSinglePlayList(response.data.playlists);
-  //   })();
-  // };c
-
   return (
     <div className="video-liked ">
       {singlePlayList.length === 0 && (
@@ -44,7 +37,12 @@ export const VideoSinglePlaylist = () => {
         </div>
       )}
       {singlePlayList.length > 0 && (
-        <button className="btn btn-success" >
+        <button
+          className="btn btn-success"
+          onClick={() =>
+            clearSinglePlaylist(playlistId, auth, setSinglePlayList, navigate)
+          }
+        >
           Clear All
         </button>
       )}
@@ -55,7 +53,13 @@ export const VideoSinglePlaylist = () => {
               <span
                 className="remove-liked"
                 onClick={() =>
-                  removeFromPlaylist(_id, auth, setSinglePlayList, playlistId)
+                  removeFromPlaylist(
+                    _id,
+                    auth,
+                    setSinglePlayList,
+                    playlistId,
+                    toast
+                  )
                 }
               >
                 x
@@ -69,7 +73,6 @@ export const VideoSinglePlaylist = () => {
               </Link>
               <div className="card-horizontal-content">
                 <p className="card-title limit-text ">{title}</p>
-
                 <p className="card-desc limit-text">{description}</p>
               </div>
             </div>

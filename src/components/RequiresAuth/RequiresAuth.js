@@ -1,4 +1,4 @@
-import { useAuth } from "context/auth-context/auth-context";
+import { useAuth } from "../../context/auth-context/auth-context";
 import { Navigate, useLocation } from "react-router-dom";
 
 export const RequiresAuth = ({ children }) => {

@@ -1,3 +1,4 @@
+
 import "./App.css";
 import { Navbar, RequiresAuth } from "./components/index";
 import { Routes, Route } from "react-router-dom";
@@ -12,7 +13,9 @@ import {
   SignupPage,
   VideoDetail,
   Playlist,
+  Profile
 } from "./pages/index";
+ import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -65,8 +68,18 @@ function App() {
             </RequiresAuth>
           }
         />
+        <Route
+          path="/profile"
+          element={
+            <RequiresAuth>
+              <Profile />
+            </RequiresAuth>
+          }
+        />
       </Routes>
+      <ToastContainer />
     </div>
+
   );
 }
 

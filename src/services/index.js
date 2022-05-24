@@ -1,10 +1,11 @@
-export { likeVideo, unLikeVideo } from "./likeServices";
-export { removeFromWatchLater, addToWatchLater } from "./watchLater";
-export { addToVideoHistory } from "./history";
-export { category } from "./category";
+export { likeVideo, unLikeVideo, removeLikedVideo } from "./likeServices";
+export { removeFromWatchLater, addToWatchLater, removeWatchLater } from "./watchLater";
+export { addVideoToHistory, clearAllHistory, removeFromHistory  } from "./history";
+export { category, searchVideo } from "./category";
 export {
   addAndDeleteFromPlaylist,
   createPlaylist,
-  removeFromPlaylist,
+  removeFromPlaylist, clearSinglePlaylist
 } from "./playlist";
 
+export { signupHandler, loginHandler, guestLoginHandler } from './inputs';

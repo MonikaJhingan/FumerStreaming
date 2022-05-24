@@ -3,6 +3,8 @@ import "./VideoWatchLater.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useAuth, useWatchLater } from "context";
+import { removeWatchLater } from "services";
+
 
 export const VideoWatchLater = () => {
   const { watchLaterVideos, setWatchLaterVideos } = useWatchLater();
@@ -18,15 +20,6 @@ export const VideoWatchLater = () => {
       setWatchLaterVideos(response.data.watchlater);
     })();
   }, [auth.token, setWatchLaterVideos]);
-
-  const removeWatchLater = (_id) => {
-    (async () => {
-      const response = await axios.delete(`/api/user/watchlater/${_id}`, {
-        headers: { authorization: auth.token },
-      });
-      setWatchLaterVideos(response.data.watchlater);
-    })();
-  };
 
   return (
     <div className="video-watch-later">
@@ -48,7 +41,7 @@ export const VideoWatchLater = () => {
               <p className="card-title watch-later-title">{title}</p>
               <button
                 className="btn btn-success watch-later-remove"
-                onClick={() => removeWatchLater(_id)}
+                onClick={() => removeWatchLater(_id, auth, setWatchLaterVideos)}
               >
                 remove
               </button>

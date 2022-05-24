@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./VideosPlaylists.css";
 import axios from "axios";
-import { useAuth } from "context/auth-context/auth-context";
-import { usePlayList } from "context/playlist-context/playlist-context";
+import { useAuth } from "../../context/auth-context/auth-context";
+import { usePlayList } from "../../context/playlist-context/playlist-context";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 

@@ -28,3 +28,9 @@ export const category = (videos, categories) => {
    }
    return videos;
  };
+ const searchVideo = (currentCategory, search) =>
+    currentCategory.filter((item) =>
+      item.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+    export { searchVideo}

@@ -1,12 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { MdDarkMode } from "react-icons/md";
+import { useAuth, useVideo } from "../../context/index";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { FcStart } from "react-icons/fc";
-
+import { FaUserCircle } from "react-icons/fa";
 
 
 export const Navbar = () => {
+  const { auth } = useAuth();
+  const { pathname } = useLocation();
+  const { videoDispatch, search} = useVideo();
+
+  const searchVideos = (e) => {
+    videoDispatch({ type: "SEARCH_VIDEO" , payload: e.target.value});
+  }
 
   return (
     <nav className="nav-menu navbar">
@@ -33,21 +40,31 @@ export const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className="search">
-        <i className="fas fa-search search-background"></i>
-        <input type="text" placeholder="SearchVideos" className="search-bar" />
-      </div>
+      {pathname === "/explore" && (
+        <div className="search">
+          <i className="fas fa-search search-background"></i>
+          <input
+            type="text"
+            placeholder="search videos"
+            className="search-bar"
+            onChange={searchVideos}
+            value={search}
+          />
+        </div>
+      )}
       <div className="menu">
         <ul>
           <li className="menu-items">
-            <Link to="/login" className="text-decorations text-white text-login">
-              login
-            </Link>
+            {auth.user ? (
+              <Link to="/profile" className="text-decorations text-white">
+                <FaUserCircle />
+              </Link>
+            ) : (
+              <Link to="/login" className="text-decorations text-white">
+                login
+              </Link>
+            )}
           </li>
-
-          <li className="menu-items fas-icons ">
-          <MdDarkMode />
-        </li>
         </ul>
       </div>
     </nav>

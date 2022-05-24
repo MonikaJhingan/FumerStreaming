@@ -60,6 +60,11 @@ export const videoReducer = (state, action) => {
            cricket: false,
          },
        };
+       case "SEARCH_VIDEO":
+        return {
+          ...state,
+          search: action.payload,
+        };
      default:
        return { ...state };
    }

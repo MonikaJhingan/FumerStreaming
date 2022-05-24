@@ -16,7 +16,7 @@
 }
 .remove-liked{
    position: absolute;
-   right: 
+   right: 2px;
    font-size: 1.4rem;
    cursor: pointer;
 }

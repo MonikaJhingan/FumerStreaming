@@ -15,17 +15,19 @@ import {
   Playlist,
   Profile
 } from "./pages/index";
- import { ToastContainer } from 'react-toastify';
+ import { ToastContainer} from 'react-toastify';
+
+ 
 
 function App() {
   return (
+  
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
-
         <Route path="/video/:videoId" element={<VideoDetail />} />
         <Route path="/explore" element={<Explore />} />
         <Route
@@ -76,9 +78,11 @@ function App() {
             </RequiresAuth>
           }
         />
+
       </Routes>
       <ToastContainer />
     </div>
+
 
   );
 }

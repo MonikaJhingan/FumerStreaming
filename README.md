@@ -1,3 +1,4 @@
-## Video Library Backend
 
-This folder contains the Mock Backend created for Video Library App. It contains different API end-points and database configuration for building Video Library; so that you can focus on building Frontend.
+
+https://user-images.githubusercontent.com/67049170/170438837-a777b86d-71c9-453d-8725-31d86d2bb931.mp4
+

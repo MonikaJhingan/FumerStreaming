@@ -34,7 +34,7 @@
 .video-icon-title,
 .video-icons,
 .video-title {
-  color: var(--black);
+  color: var(--dark-green);
   text-transform: capitalize;
 }
 .video {

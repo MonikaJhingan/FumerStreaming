@@ -2,8 +2,8 @@ import React, { useReducer } from "react";
 import "./Login.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
-import { useAuth } from "context/auth-context/auth-context";
-import { loginReducer } from "reducer/login-reducer";
+import { useAuth } from "../../context/auth-context/auth-context";
+import { loginReducer } from "../../reducer/login-reducer";
 import { BiShow, BiHide } from "react-icons/bi";
 import { loginHandler, guestLoginHandler } from "../../services/inputs";
 
@@ -30,7 +30,7 @@ export const Login = () => {
           loginHandler(e, email, password, axios, auth, setAuth, navigate, from)
         }
       >
-        <label htmlFor="email">
+        <label htmlFor="email" >
           Email
           <input
             type="email"

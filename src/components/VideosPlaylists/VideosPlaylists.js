@@ -5,6 +5,8 @@ import { useAuth } from "../../context/auth-context/auth-context";
 import { usePlayList } from "../../context/playlist-context/playlist-context";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
 
 
 export const VideosPlaylists = () => {
@@ -46,6 +48,7 @@ export const VideosPlaylists = () => {
                   "https://www.kindpng.com/picc/m/82-823615_video-resume-play-video-icon-png-transparent-png.png"
                 }
                 alt={title}
+               onClick={() => Navigate(`/video/${_id}`)}
               />
               <div className="playlist-side">
                 <div className="playlist-count">{videos.length}</div>

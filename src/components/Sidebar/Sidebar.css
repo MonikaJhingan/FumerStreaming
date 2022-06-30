@@ -12,7 +12,7 @@
    display: flex;
    align-items: center;
    cursor: pointer;
-   color: var(--dark-red);
+   color: rgb(244, 52, 4);
  }
  .sidebar-text {
   
@@ -24,7 +24,7 @@
  }
  .sidebar-link {
    text-decoration: none;
-   color: var(--dark-red);
+   color: rgb(244, 52, 4);
    width: 100%;
    display: flex;
    align-items: center;

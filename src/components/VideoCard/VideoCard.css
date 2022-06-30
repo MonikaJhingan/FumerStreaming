@@ -1,19 +1,24 @@
 
 .videocard{
    position: relative;
+   box-shadow:5px 5px 5px 2px rgb(244, 52, 4);
+
   }
   .videocard-main {
      display: flex;
    }
    
    .videocard-title {
-     font-size: 1.1rem;
+     font-size: 1rem;
      font-weight: 500;
      overflow: hidden;
      text-overflow: ellipsis;
      display: -webkit-box;
      -webkit-line-clamp: 2;
      -webkit-box-orient: vertical;
+     text-transform: uppercase;
+     color:blueviolet;
+
      
    }
    

@@ -1,5 +1,6 @@
 .videos-playlists {
-   width: 70%;
+  margin-top: 5rem;
+   width: 80%;
    position: absolute;
    right: 0;
    top: 1.3rem;
@@ -10,7 +11,7 @@
  .playlist-card {
    height: 12rem;
    position: relative;
-   width: 14rem;
+   width: 16rem;
  }
  
  .playlist-image {

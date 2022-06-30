@@ -30,7 +30,10 @@ export const Login = () => {
           loginHandler(e, email, password, axios, auth, setAuth, navigate, from)
         }
       >
+
         <label htmlFor="email" >
+        <div className="email-input">
+
           Email
           <input
             type="email"
@@ -43,6 +46,7 @@ export const Login = () => {
             value={email}
             required
           />
+          </div>
         </label>
         <label htmlFor="password">
           Password

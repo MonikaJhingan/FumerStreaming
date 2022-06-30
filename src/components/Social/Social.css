@@ -1,13 +1,21 @@
 .social{
    margin-top: 5rem;
-   background-color: var(--black);
+   background-color:rgb(194, 189, 189);
+   font-family:'Times New Roman', Times, serif;
+   text-transform: uppercase;
+
 }
 .social-heading{
-   color: var(--dark-red);
+   color:black ;
    font-weight: bold;
    text-transform: capitalize;
-   font-variant: small-caps;
    font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   padding-top: 38px;
+   color:rgb(244, 52, 4) ;
+   text-transform: uppercase;
+
+
 }
 .social-icons{
    margin-top: 2rem;
@@ -18,8 +26,9 @@
 }
 .social-icon{
    margin:  1rem;
-   color: var(--secondary-color);
+   color:rgb(244, 52, 4) ;
 }
 .icon-color{
-   color: var(--dark-green);
+   color: black;
+   font-size:3rem;
 }

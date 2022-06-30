@@ -6,15 +6,17 @@
  }
  .signup-form {
    width: 30rem;
-   border: 3px solid var(--dark-red);
+   border: 3px solid rgb(244, 52, 4);
    margin-top: 1rem;
    padding: 1rem;
-   text-transform: capitalize;
    border-radius: 5px;
  }
  .signup-form-title {
    text-align: center;
-   color: var(--dark-red);
+   color: rgb(244, 52, 4);
+   font-family:'Times New Roman', Times, serif;
+
+
  }
  
  .input {
@@ -40,7 +42,7 @@
    margin: 1rem 0;
    width: 100%;
    padding: 6px 0;
-   background-color: var(--dark-red);
+   background-color:rgb(244, 52, 4);
    border: none;
    color: var(--primary-color);
    text-transform: uppercase;
@@ -51,6 +53,6 @@
    text-align: center;
  }
  .account {
-   color: var(--gray);
+   color: var(--black);
    margin-left: 50px;
  }

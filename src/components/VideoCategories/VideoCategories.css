@@ -1,15 +1,25 @@
 .video-categories {
-   margin-top: 4.5rem;
-   position: absolute;
+   margin-top: 4rem;
+   position:relative;
    display: flex;
-   width: 95%;
+   width: 45%;
    right: 0;
-    justify-content:center;
-    margin-left: 14rem;
+   justify-content:center;
+   align-items: flex-start;
+   font-family:'Times New Roman', Times, serif;
+
   }
   .video-button {
-    background-color: var(--dark-red);
+    background-color:  rgb(244, 52, 4);
     color: var(--primary-color);
+    position: relative;
+    width:7rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    box-shadow: 10px;
+    box-shadow:5px 5px 5px 2px blueviolet;
+
+
   }
   .video-button:hover {
     color: var(--secondary-color);

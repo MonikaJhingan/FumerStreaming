@@ -1,22 +1,27 @@
 .video-liked{
    position: absolute;
-   width: 70%;
-   right: 1rem;
+   width: 75%;
+   right: 3rem;
+   margin-top: 5rem;
 }
 .card-video-like{
    width: 100%;
    margin-bottom: 1rem;
 }
 .limit-text{
-   overflow: hidden;
+  overflow: hidden;
  text-overflow: ellipsis;
  display: -webkit-box;
  -webkit-line-clamp: 3;
  -webkit-box-orient: vertical;
+ color:black;
 }
 .remove-liked{
    position: absolute;
-   right: 2px;
-   font-size: 1.4rem;
+   right: 5px;
+   font-size: 2rem;
    cursor: pointer;
+   margin-bottom: 10px;
+   color:black;
+
 }
